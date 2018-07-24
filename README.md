@@ -4,7 +4,7 @@
 
 1. ### Terran：
 
-   1. SCV隐身，建造时间0.2s，攻击升级为16，射程15
+   1. SCV隐身，建造时间0.2s，攻击升级为16，射程16
    2. SCV可以切换到飞行模式
       - 飞行单位
       - 隐身，反隐，使用坦克炮击，带溅射，伤害35，射程16，可对空
@@ -14,7 +14,7 @@
 
 2. ### Zerg：
 
-   1. 工蜂（Drone）隐身，孵化时间0.2s，攻击16，射程15
+   1. 工蜂（Drone）隐身，孵化时间0.2s，攻击16，射程16
    2. 幼虫（Larva）生成时间减少到1s
    3. 跳虫（Zergling）可以变身为凯莉甘（Karrigan）
    4. 凯莉甘（Karrigan）：
@@ -24,9 +24,10 @@
 
 3. ### Protoss：
 
-   1. 探机（Probe）隐身，建造时间0.2s，攻击16，射程15
-   2. 狂热者（Zealot）可以变身为泽拉图（Zeratual）
-   3. 泽拉图（Zeratual）：
+   1. 探机（Probe）隐身，建造时间0.2s，攻击16，射程16
+   2. 灵能风暴、心灵控制、幻象不消耗能量
+   3. 狂热者（Zealot）可以变身为泽拉图（Zeratual）
+   4. 泽拉图（Zeratual）：
       - 飞行单位
       - 隐身，反隐，使用幽能曲光刃，单体伤害100，射程16，可对空
       - 技能：灵能风暴、心灵控制
@@ -61,22 +62,27 @@
 
 # 发布方法
 
-1. 使用DatEdit导出worker.mpq
-2. 使用Ice_XP修改iscript.bin
-3. 使用MPQWorkshop把iscript.bin添加到worker.mpq中
-4. 使用Firgraft v0.93，保存时导入worker.mpq，保存到worker-remix.exe
+1. 编辑工具可以从[tools](https://github.com/chenkai2/Starcraft-Mod-Tookit)里找到
+2. 使用DatEdit导出worker.mpq
+3. 使用Ice_XP修改iscript.bin
+4. 使用MPQWorkshop把iscript.bin添加到worker.mpq中
+5. 使用Firgraft v0.93打开worker-remix.exe进行修改后，保存时导入worker.mpq，然后保存到worker-remix.exe
 
 ## 修改技术要点
 
-1. ### 对空的修改
+1. ### 工具
+
+   [星际争霸Mod工具包](https://github.com/chenkai2/Starcraft-Mod-Tookit)
+
+2. ### 对空的修改
 
    参考[AirAttack.md](AirAttack.md)
 
-2. ### UnitMorph的要点
+3. ### UnitMorph的要点
 
    参考[UnitMorph.md](UnitMorph.md)
 
-3. ### SCV起飞的实现
+4. ### SCV起飞的实现
 
    参考[SCVTransform.md](SCVTransform.md)
 
